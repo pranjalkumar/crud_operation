@@ -29,10 +29,10 @@ ProductsSchema.statics={
     getAll: function(query,callback){
         this.find(query,callback);
     },
-    updateone: function(id,updatedata,callback){
+    update1: function(id,updatedata,callback){
         this.update(id,{$set:updatedata},callback);
     },
-    removeone: function(id,callback){
+    remove1: function(id,callback){
         this.remove(id,callback);
     },
     create: function(data,callback){
