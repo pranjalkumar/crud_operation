@@ -5,7 +5,7 @@ var responseTime=require('response-time');
 var Products= require('../model/products').Products;
 
 var client=redis.createClient();
-client.on('error',function (err,) {
+client.on('error',function (err) {
    console.log('Error '+err);
 });
 exports.create= function (req,res) {
